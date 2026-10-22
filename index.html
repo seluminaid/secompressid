@@ -109,6 +109,7 @@ dialog p{color:var(--dim)}
 .footer-inner { max-width: 960px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 1fr; gap: 24px; }
 .footer-brand p.footer-title { font-family: var(--fd); font-weight: 700; margin: 0 0 6px; font-size: 1.05rem; }
 .footer-brand p.footer-tag { margin: 0; color: var(--dim); font-size: 0.88rem; max-width: 260px; }
+.footer-brand p.footer-credit { margin: 10px 0 0; color: var(--dim); font-size: 0.78rem; max-width: 300px; }
 .footer-col h4 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--dim); margin: 0 0 12px; font-weight: 700; }
 .footer-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
 .footer-col a, .footer-col button { background: none; border: none; padding: 0; text-align: left; font-size: 0.9rem; color: var(--dim); text-decoration: none; cursor: pointer; }
@@ -262,6 +263,7 @@ dialog p{color:var(--dim)}
     <div class="footer-brand">
       <p class="footer-title">SeCompress</p>
       <p class="footer-tag" data-i18n="footer_tag">Simple tools for everyday digital needs.</p>
+      <p class="footer-credit" data-i18n="footer_credit">Built with open-source pdf-lib (MIT).</p>
     </div>
     <div class="footer-col">
       <h4 data-i18n="footer_company">Company</h4>
@@ -278,6 +280,7 @@ dialog p{color:var(--dim)}
         <li><a href="https://seluminaid.github.io/seqrcodeid/">SeQRCode</a></li>
         <li><a href="#top" aria-current="page">SeCompress</a></li>
         <li><a href="https://seluminaid.github.io/sepdfid/">SePDF</a></li>
+        <li><a href="https://seluminaid.github.io/seocrid/">SeOCR</a></li>
       </ul>
     </div>
   </div>
@@ -354,6 +357,7 @@ const I18N = {
     w3_t: 'No account', w3_d: 'Open, pick a file, done. No sign-up or login.',
     tool_img: 'Compress Image', tool_img_d: 'Shrink JPG, PNG, and WebP by level or target size.',
     tool_pdf: 'Compress PDF', tool_pdf_d: 'Shrink PDFs that contain JPEG images, such as scans and photos.',
+    footer_credit: 'Built with open-source pdf-lib (MIT).',
     footer_tag: 'Simple tools for everyday digital needs.', footer_suite: 'SeLuminaID Products', footer_top: 'Back to top', footer_company: 'Company',
     footer_contact: 'Contact', footer_privacy: 'Privacy Policy', footer_terms: 'Terms of Service', modal_close: 'Close',
     privacy_body: 'Your files stay private. SeCompress compresses files directly in your browser and nothing is uploaded to a server. History only stores file name, sizes, and time, never file contents. We count visits anonymously with GoatCounter (pages viewed, country, browser and device type). It uses no cookies and never sees the contents of your files.',
@@ -388,6 +392,7 @@ const I18N = {
     w3_t: 'Tanpa akun', w3_d: 'Buka, pilih file, selesai. Tidak perlu daftar atau login.',
     tool_img: 'Compress Gambar', tool_img_d: 'Perkecil JPG, PNG, dan WebP dengan level atau target ukuran.',
     tool_pdf: 'Compress PDF', tool_pdf_d: 'Perkecil PDF yang berisi gambar JPEG, seperti hasil scan dan foto.',
+    footer_credit: 'Dibangun dengan pdf-lib yang open-source (MIT).',
     footer_tag: 'Alat sederhana untuk kebutuhan digital sehari-hari.', footer_suite: 'Produk SeLuminaID', footer_top: 'Kembali ke atas', footer_company: 'Perusahaan',
     footer_contact: 'Kontak', footer_privacy: 'Kebijakan Privasi', footer_terms: 'Ketentuan Layanan', modal_close: 'Tutup',
     privacy_body: 'File kamu tetap privat. SeCompress mengompres file langsung di browser dan tidak ada yang diunggah ke server. Riwayat hanya menyimpan nama file, ukuran, dan waktu, bukan isi file. Kami menghitung kunjungan secara anonim dengan GoatCounter (halaman yang dibuka, negara, browser, dan jenis perangkat). Layanan ini tidak memakai cookie dan tidak pernah melihat isi file kamu.',
